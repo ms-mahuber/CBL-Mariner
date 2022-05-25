@@ -18,7 +18,7 @@
 Summary:        Ruby
 Name:           ruby
 Version:        3.1.2
-Release:        3%{?dist}
+Release:        4%{?dist}
 License:        (Ruby OR BSD) AND Public Domain AND MIT AND CC0 AND zlib AND UCD
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -74,11 +74,6 @@ Provides:       rubygem-rake-doc = %{rubygems_rake_version}
 
 Provides:       rubygem(test-unit) = %{rubygems_test_unit_version}
 Provides:       rubygem-test-unit = %{rubygems_test_unit_version}
-
-Provides:       rubygem-bigdecimal = %{bigdecimal_version}-%{release}
-Provides:       rubygem(bigdecimal) = %{bigdecimal_version}-%{release}
-Provides:       rubygem-bundler = %{bundler_version}-%{release}
-Provides:       rubygem(bundler) = %{bundler_version}-%{release}
 
 %description
 The Ruby package contains the Ruby development environment.
