@@ -18,7 +18,7 @@
 Summary:        Ruby
 Name:           ruby
 Version:        3.1.2
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:        (Ruby OR BSD) AND Public Domain AND MIT AND CC0 AND zlib AND UCD
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -142,6 +142,10 @@ autoconf
 
 %install
 %make_install
+
+# Remove files for rubygems bigdecimal and bundler
+find %{buildroot} -type f -iname "*bigdecimal*" -delete -print
+find %{buildroot} -type f -iname "*bundler*" -delete -print
 
 # The following install steps are taken from the Fedora 34 spec (license: MIT) and modified for Mariner
 # https://src.fedoraproject.org/rpms/ruby/tree/f34

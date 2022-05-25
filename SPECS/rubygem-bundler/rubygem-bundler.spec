@@ -1,10 +1,9 @@
 %global debug_package %{nil}
-%global gemdir %(IFS=: R=($(gem env gempath)); echo ${R[${#R[@]}-1]})
 %global gem_name bundler
 Summary:        manages an application's dependencies
 Name:           rubygem-bundler
 Version:        2.3.8
-Release:        1%{?dist}
+Release:        2%{?dist}
 License:        MIT
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
